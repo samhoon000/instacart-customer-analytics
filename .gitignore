@@ -1,8 +1,43 @@
-# PyCharm
-.idea/
-*.iml
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
 
-# Ignore large Instacart datasets
-data/orders.csv
-data/order_products__prior.csv
-data/products.csv
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Large Dataset Files
+# ==========================
+data/
+
+# OR (if you want to keep the folder but ignore its contents)
+# data/*
+# !data/.gitkeep
+
+# ==========================
+# DuckDB Database Files
+# ==========================
+database/
+*.duckdb
+*.wal
+
+# ==========================
+# Generated Files
+# ==========================
+*.log
+*.tmp
