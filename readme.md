@@ -1,39 +1,331 @@
-# Instacart Customer Intelligence Platform
+# 🛒 Instacart Customer Behavior & Business Analytics
 
-## Idea
+> An end-to-end Data Analytics project focused on analyzing customer purchasing behavior, shopping patterns, customer retention, and product performance using **Python, DuckDB, SQL, and Power BI**.
 
-This project aims to analyze customer purchasing behavior using the Instacart Market Basket Analysis dataset.
+---
 
-The goal is to explore how customers shop, identify popular products and departments, understand ordering patterns, and uncover insights that can help improve business decisions.
+## 🚧 Project Status
 
-In addition to data analysis, the project will include a small AI component that generates business insights and recommendations based on the findings.
+**Current Stage:** In Progress
 
-## Planned Features
+This project follows a complete end-to-end analytics workflow, transforming raw Instacart transaction data into business insights using DuckDB, SQL analytics, and Power BI.
 
-* Data cleaning and preprocessing
-* Exploratory Data Analysis (EDA)
-* Customer purchasing behavior analysis
-* Product and department analysis
-* Order trend analysis
-* Reorder and retention analysis
-* Market basket analysis
-* Demand forecasting
-* AI-generated business insights
+### Completed
 
-## Tech Stack
+- ✅ Data Understanding
+- ✅ DuckDB Database Setup
+- ✅ SQL Business Analysis
+- ✅ Customer Analytics
+- ✅ Dashboard SQL Views
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib / Plotly
-* Scikit-Learn
-* Streamlit
-* Gemini API
+### In Progress
 
-## Dataset
+- 🚧 Power BI Dashboard
+- 🚧 Business Report
+- 🚧 Documentation & Final Insights
 
-Instacart Market Basket Analysis Dataset
+---
 
-## Status
+# 🏗️ Project Workflow
 
-🚧 Project in Development
+<p align="center">
+  <img src="Instacart-Analysis-Workflow.png" width="950">
+</p>
+
+---
+
+# 📊 Dashboard Preview
+
+> 🚧 Dashboard currently under development.
+
+A preview will be added after the Power BI dashboard is completed.
+
+---
+
+# 🎯 Project Objective
+
+The objective of this project is to analyze customer purchasing behavior and generate actionable business insights that can help Instacart improve customer retention, optimize product recommendations, and identify recurring purchasing patterns.
+
+The project focuses on:
+
+- Customer purchasing behavior
+- Product performance
+- Customer segmentation
+- Customer loyalty
+- Customer retention
+- Subscription opportunity analysis
+- Business KPI reporting
+- Interactive dashboard development
+
+---
+
+# 📂 Project Structure
+
+```text
+Instacart/
+│
+├── SQL/
+│   ├── business_analysis.sql
+│   ├── customer-analytics.sql
+│   └── views.sql
+│
+├── notebook/
+│
+├── Instacart-Analysis-Workflow.png
+├── setup_database.py
+├── .gitignore
+└── README.md
+```
+
+---
+
+# 📊 Dataset
+
+This project uses the **Instacart Online Grocery Shopping Dataset**.
+
+The dataset contains over **3 million grocery transactions** from more than **200,000 customers**, including purchasing history, products, aisles, and departments.
+
+### Dataset Tables
+
+- Orders
+- Prior Orders
+- Products
+- Aisles
+- Departments
+
+> **Note**
+>
+> The raw dataset is not included in this repository because of its large size.
+
+Download the dataset separately and place the CSV files inside a local **data/** folder.
+
+After downloading the dataset, simply run:
+
+```bash
+python setup_database.py
+```
+
+This script automatically:
+
+- Creates the DuckDB database
+- Imports all CSV files
+- Creates the required database tables
+
+---
+
+# ⚙️ Database
+
+Instead of using MySQL, this project uses **DuckDB**, an analytical database optimized for fast OLAP queries on large datasets.
+
+The database setup includes:
+
+- Database creation
+- CSV import
+- Table creation
+- Relationship validation
+- Dashboard view creation
+
+---
+
+# 🗄️ SQL Analytics
+
+The project contains business-focused SQL analyses designed to answer practical business questions.
+
+## Customer Analytics
+
+- Customer Segmentation
+- Customer Loyalty Analysis
+- Customer Retention Analysis
+- High Value Customer Analysis
+
+## Product Analytics
+
+- Most Purchased Products
+- Most Reordered Products
+- Product Reorder Rate Analysis
+- Subscription Opportunity Analysis
+
+## Business Analytics
+
+- Peak Ordering Hours
+- Peak Ordering Days
+- Average Basket Size
+- Department Performance
+- Repeat Purchase Analysis
+- Product Affinity Analysis
+
+SQL scripts are available in:
+
+```text
+SQL/
+├── business_analysis.sql
+├── customer-analytics.sql
+└── views.sql
+```
+
+---
+
+# 📈 Power BI Dashboard (In Progress)
+
+The Power BI dashboard is currently under development.
+
+### Planned KPI Cards
+
+- Total Orders
+- Total Customers
+- Total Products
+- Average Basket Size
+- Overall Reorder Rate
+
+### Planned Visualizations
+
+- Orders by Hour
+- Orders by Day
+- Customer Segmentation
+- Department Performance
+- Customer Retention
+- Customer Loyalty
+- Top Purchased Products
+- Subscription Opportunity Products
+
+### Planned Filters
+
+- Department
+- Order Day
+- Order Hour
+- Customer Segment
+
+---
+
+# 💡 Business Questions Solved
+
+The project answers business questions including:
+
+- When do customers place the most orders?
+- Which products are purchased most frequently?
+- Which products have the highest reorder rates?
+- Which departments drive repeat purchases?
+- Which customers are the most valuable?
+- How does customer retention change over time?
+- Which products are suitable for subscription services?
+- Which customer segments should receive targeted marketing campaigns?
+
+---
+
+# 📊 Current Insights
+
+Current analysis indicates:
+
+- Grocery staples consistently achieve the highest reorder rates.
+- Customer purchasing activity varies considerably throughout the day.
+- Customer segmentation enables personalized retention strategies.
+- Certain departments generate significantly stronger customer loyalty.
+- Highly reordered products are strong candidates for subscription services.
+
+Additional insights will be included once dashboard development is completed.
+
+---
+
+# ✅ Progress Tracker
+
+## Phase 1 — Data Understanding
+
+- [x] Dataset Exploration
+- [x] Relationship Analysis
+- [x] Schema Understanding
+
+## Phase 2 — Database Integration
+
+- [x] DuckDB Setup
+- [x] CSV Import
+- [x] Database Creation
+
+## Phase 3 — SQL Analytics
+
+- [x] Business Analysis
+- [x] Customer Analytics
+- [x] Customer Segmentation
+- [x] Customer Loyalty
+- [x] Customer Retention
+- [x] Dashboard SQL Views
+
+## Phase 4 — Dashboard Development
+
+- [ ] Executive Dashboard
+- [ ] Product Analytics Dashboard
+- [ ] Customer Analytics Dashboard
+- [ ] Dashboard Optimization
+
+## Phase 5 — Documentation
+
+- [ ] Business Report
+- [ ] Dashboard Insights
+- [ ] Final Documentation
+
+---
+
+# 📄 Project Deliverables
+
+The completed project will include:
+
+- DuckDB Database
+- SQL Business Analysis
+- Customer Analytics
+- Dashboard SQL Views
+- Interactive Power BI Dashboard
+- Business Insights
+- Complete Documentation
+
+---
+
+# 🛠️ Tech Stack
+
+## Programming
+
+- Python
+
+## Data Processing
+
+- Pandas
+- NumPy
+
+## Database
+
+- DuckDB
+- SQL
+
+## Visualization
+
+- Power BI
+- Matplotlib
+
+## Development
+
+- Jupyter Notebook
+- VS Code
+- Git
+- GitHub
+
+---
+
+# 🚀 Future Improvements
+
+- Customer Churn Prediction
+- Product Recommendation System
+- Demand Forecasting
+- Customer Lifetime Value Analysis
+- Dashboard Deployment
+
+---
+
+## 👨‍💻 Author
+
+**Abdul Samhoon**
+
+Aspiring Data Analyst | Python | SQL | Power BI | DuckDB
+
+Building data-driven business solutions through analytics, visualization, and business intelligence.
+
+---
+
+⭐ **An ongoing end-to-end Data Analytics project demonstrating customer analytics, SQL, DuckDB, and Power BI for business decision-making.**
