@@ -6,7 +6,7 @@
 
 ## 🚧 Project Status
 
-**Current Stage:** In Progress
+**Current Stage:** Dashboard Development
 
 This project follows a complete end-to-end analytics workflow, transforming raw Instacart transaction data into business insights using DuckDB, SQL analytics, and Power BI.
 
@@ -17,10 +17,11 @@ This project follows a complete end-to-end analytics workflow, transforming raw 
 - ✅ SQL Business Analysis
 - ✅ Customer Analytics
 - ✅ Dashboard SQL Views
+- ✅ Executive Overview Dashboard
 
 ### In Progress
 
-- 🚧 Power BI Dashboard
+- 🚧 Customer & Product Insights Dashboard
 - 🚧 Business Report
 - 🚧 Documentation & Final Insights
 
@@ -36,9 +37,13 @@ This project follows a complete end-to-end analytics workflow, transforming raw 
 
 # 📊 Dashboard Preview
 
-> 🚧 Dashboard currently under development.
+## Executive Overview
 
-A preview will be added after the Power BI dashboard is completed.
+The Executive Overview dashboard provides a high-level summary of business performance, helping stakeholders monitor operational KPIs, customer purchasing trends, and department performance.
+
+<p align="center">
+  <img src="dashboard/Executive%20Overview.png" alt="Executive Overview Dashboard" width="100%">
+</p>
 
 ---
 
