@@ -39,13 +39,42 @@ This project follows a complete end-to-end analytics workflow, transforming raw 
 
 ## Executive Overview
 
-The Executive Overview dashboard provides a high-level summary of business performance, helping stakeholders monitor operational KPIs, customer purchasing trends, and department performance.
+The Executive Overview dashboard provides a high-level view of Instacart's business performance, enabling stakeholders to monitor operational KPIs, ordering trends, customer segmentation, and department-level performance.
+
+**Key Highlights**
+- 📦 Total Orders
+- 👥 Total Customers
+- 🛒 Total Products
+- 🧺 Average Basket Size
+- 🔄 Overall Reorder Rate
+- ⏰ Orders by Hour
+- 📅 Orders by Day of Week
+- 👤 Customer Value Segmentation
+- 🏬 Department Performance
 
 <p align="center">
   <img src="dashboard/Executive%20Overview.png" alt="Executive Overview Dashboard" width="100%">
 </p>
 
 ---
+
+## Customer & Product Insights
+
+The Customer & Product Insights dashboard focuses on customer retention, loyalty, and product performance to identify opportunities for improving customer engagement and driving repeat purchases.
+
+**Key Highlights**
+- 📈 Top 10 Purchased Products
+- 📊 Customer Retention Analysis
+- 🔄 Subscription Opportunity Products
+- 🏆 Top 10 Loyal Customers
+
+<p align="center">
+  <img src="dashboard/Customer%20%26%20Product%20Insights.png" alt="Customer & Product Insights Dashboard" width="100%">
+</p>
+
+---
+
+
 
 # 🎯 Project Objective
 
