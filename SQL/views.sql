@@ -167,3 +167,27 @@ COPY (
 )
 TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/subscription_products.csv'
 (FORMAT CSV, HEADER);
+
+CREATE VIEW high_value_customer_preferences AS
+SELECT
+    d.department,
+    COUNT(*) AS Total_Purchases
+FROM customer_segments cs
+JOIN orders o
+ON cs.user_id = o.user_id
+JOIN order_products_prior op
+ON o.order_id = op.order_id
+JOIN products p
+ON op.product_id = p.product_id
+JOIN department d
+ON p.department_id = d.department_id
+WHERE cs.Customer_Segmentation = 'High Value'
+GROUP BY d.department
+ORDER BY Total_Purchases DESC;
+
+COPY (
+    SELECT *
+    FROM high_value_customer_preferences
+)
+TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/high_value_customer_preferences.csv'
+(FORMAT CSV, HEADER);
