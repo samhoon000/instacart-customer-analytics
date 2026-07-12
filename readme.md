@@ -4,11 +4,11 @@
 
 ---
 
-## 🚧 Project Status
+## ✅ Project Status
 
-**Current Stage:** Dashboard Development
+**Status:** Completed
 
-This project follows a complete end-to-end analytics workflow, transforming raw Instacart transaction data into business insights using DuckDB, SQL analytics, and Power BI.
+This project demonstrates a complete end-to-end analytics workflow, transforming over **3.4 million Instacart transactions** into actionable business insights. The project covers the entire data analytics pipeline, including data ingestion, database creation, SQL-based business analysis, interactive Power BI dashboard development, and comprehensive project documentation.
 
 ### Completed
 
@@ -18,12 +18,10 @@ This project follows a complete end-to-end analytics workflow, transforming raw 
 - ✅ Customer Analytics
 - ✅ Dashboard SQL Views
 - ✅ Executive Overview Dashboard
-
-### In Progress
-
-- 🚧 Customer & Product Insights Dashboard
-- 🚧 Business Report
-- 🚧 Documentation & Final Insights
+- ✅ Customer & Product Insights Dashboard
+- ✅ Business Report
+- ✅ Project Documentation
+- ✅ GitHub Portfolio Ready
 
 ---
 
@@ -199,35 +197,31 @@ SQL/
 
 ---
 
-# 📈 Power BI Dashboard (In Progress)
+# 📈 Power BI Dashboard
 
-The Power BI dashboard is currently under development.
+The project includes two interactive Power BI dashboards designed to communicate business insights through executive-focused visualizations.
 
-### Planned KPI Cards
+### Dashboard 1 — Executive Overview
 
 - Total Orders
 - Total Customers
 - Total Products
 - Average Basket Size
 - Overall Reorder Rate
-
-### Planned Visualizations
-
 - Orders by Hour
-- Orders by Day
+- Orders by Day of Week
 - Customer Segmentation
 - Department Performance
-- Customer Retention
-- Customer Loyalty
+
+### Dashboard 2 — Customer & Product Insights
+
 - Top Purchased Products
+- Department Reorder Rate
+- Customer Retention Analysis
 - Subscription Opportunity Products
+- Top Loyal Customers
 
-### Planned Filters
-
-- Department
-- Order Day
-- Order Hour
-- Customer Segment
+The dashboards provide stakeholders with an intuitive view of customer behavior, operational trends, product demand, and opportunities to improve customer retention and recurring revenue.
 
 ---
 
@@ -246,17 +240,18 @@ The project answers business questions including:
 
 ---
 
-# 📊 Current Insights
+# 📊 Key Business Insights
 
-Current analysis indicates:
+The analysis uncovered several valuable business insights:
 
-- Grocery staples consistently achieve the highest reorder rates.
-- Customer purchasing activity varies considerably throughout the day.
-- Customer segmentation enables personalized retention strategies.
-- Certain departments generate significantly stronger customer loyalty.
-- Highly reordered products are strong candidates for subscription services.
-
-Additional insights will be included once dashboard development is completed.
+- 📦 The platform processes over **3.4 million** customer orders across more than **206,000** customers.
+- ⏰ Customer demand peaks during the late morning and early afternoon.
+- 📅 Sundays and Mondays experience the highest ordering activity.
+- 🥦 Produce is the highest-performing department by purchase volume.
+- 🍌 Bananas are the most frequently purchased product.
+- 🔄 High reorder rates indicate strong customer loyalty in essential grocery categories.
+- 💳 Several products show strong potential for subscription or auto-replenishment services.
+- 📈 Customer retention gradually declines over successive purchases, highlighting opportunities for targeted loyalty programs.
 
 ---
 
@@ -285,30 +280,31 @@ Additional insights will be included once dashboard development is completed.
 
 ## Phase 4 — Dashboard Development
 
-- [ ] Executive Dashboard
-- [ ] Product Analytics Dashboard
-- [ ] Customer Analytics Dashboard
-- [ ] Dashboard Optimization
+- [x] Executive Dashboard
+- [x] Product Analytics Dashboard
+- [x] Customer Analytics Dashboard
+- [x] Dashboard Optimization
 
 ## Phase 5 — Documentation
 
-- [ ] Business Report
-- [ ] Dashboard Insights
-- [ ] Final Documentation
+- [x] Business Report
+- [x] Dashboard Insights
+- [x] Final Documentation
 
 ---
 
 # 📄 Project Deliverables
 
-The completed project will include:
+This repository includes:
 
-- DuckDB Database
-- SQL Business Analysis
-- Customer Analytics
-- Dashboard SQL Views
-- Interactive Power BI Dashboard
-- Business Insights
-- Complete Documentation
+- 🐍 Python Database Setup Script
+- 🦆 DuckDB Database
+- 🗄 SQL Business Analysis Scripts
+- 📊 Power BI Dashboards
+- 📑 Project Report
+- 🎤 Project Presentation
+- 📈 Dashboard Screenshots
+- 📚 Complete Documentation
 
 ---
 
@@ -356,10 +352,10 @@ The completed project will include:
 
 **Abdul Samhoon**
 
-Aspiring Data Analyst | Python | SQL | Power BI | DuckDB
-
-Building data-driven business solutions through analytics, visualization, and business intelligence.
-
 ---
 
-⭐ **An ongoing end-to-end Data Analytics project demonstrating customer analytics, SQL, DuckDB, and Power BI for business decision-making.**
+## ⭐ Project Summary
+
+This project demonstrates a complete end-to-end Data Analytics workflow using real-world retail data. From importing over **3.4 million transactions** into DuckDB to performing SQL-based business analysis and developing interactive Power BI dashboards, it showcases practical skills in data engineering, analytics, business intelligence, and dashboard design. The project emphasizes business storytelling by converting complex transactional data into actionable insights that support operational planning, customer retention, and strategic decision-making.
+
+If you found this project interesting, feel free to ⭐ this repository.
