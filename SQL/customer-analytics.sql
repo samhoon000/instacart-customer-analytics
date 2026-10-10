@@ -23,14 +23,14 @@ GROUP BY user_id;
     -- Q14. Which departments are most popular among high-frequency customers?
     -- Business Use: Understand preferences of loyal customers.
 
-SELECT d.department,COUNT(*) AS Total_Purchases FROM customer_segments c
+SELECT d.department, COUNT(*) AS Total_Purchases FROM customer_segments c
 JOIN orders o ON c.user_id=o.user_id  
 JOIN order_products_prior op ON o.order_id = op.order_id
 JOIN products p ON op.product_id = p.product_id
 JOIN department d ON p.department_id = d.department_id
 WHERE c.Customer_Segmentation ='High Value'
 GROUP BY d.department
-ORDER BY High_Frequency_Customers DESC
+ORDER BY Total_Purchases DESC
 LIMIT 10;
 
 
@@ -77,7 +77,8 @@ ORDER BY Loyalty_Rank;
     -- Business Use: Focus investments on retention-driving categories.
 
 SELECT 
-d.department,COUNT(*) AS Repeat_Purchases
+    d.department,
+    SUM(op.reordered) AS Repeat_Purchases
 FROM order_products_prior op 
 JOIN products p ON op.product_id = p.product_id
 JOIN department d ON p.department_id = d.department_id
@@ -90,13 +91,13 @@ LIMIT 10;
     -- Business Use: Create recurring revenue opportunities from highly reordered products.
 
 SELECT 
-p.product_name,
-COUNT(*) AS Total_Purchases,
-SUM(op.reordered) AS Total_Reorders,
-ROUND(SUM(op.reordered)*100/COUNT(*),2) AS Reorder_Rate
+    p.product_name,
+    COUNT(*) AS Total_Purchases,
+    SUM(op.reordered) AS Total_Reorders,
+    ROUND(SUM(op.reordered) * 100.0 / COUNT(*), 2) AS Reorder_Rate
 FROM order_products_prior op 
-JOIN products p on op.product_id = p.product_id
-GROUP BY p.product_id,p.product_name
-HAVING COUNT(*)>=1000
-ORDER BY Reorder_Rate DESC,Total_Purchases DESC
+JOIN products p ON op.product_id = p.product_id
+GROUP BY p.product_id, p.product_name
+HAVING COUNT(*) >= 1000
+ORDER BY Reorder_Rate DESC, Total_Purchases DESC
 LIMIT 20;

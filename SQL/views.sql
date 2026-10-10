@@ -19,7 +19,7 @@ SELECT
     ) AS Overall_Reorder_Rate;
 
 COPY dashboard_kpis
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/dashboard_kpis.csv'
+TO 'exports/dashboard_kpis.csv'
 (FORMAT CSV, HEADER);
 
 -- Orders by Hour
@@ -35,7 +35,7 @@ COPY (
     SELECT *
     FROM orders_by_hour
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/orders_by_hour.csv'
+TO 'exports/orders_by_hour.csv'
 (FORMAT CSV, HEADER);
 
 -- Orders by Day
@@ -51,7 +51,7 @@ COPY (
     SELECT *
     FROM orders_by_day
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/orders_by_day.csv'
+TO 'exports/orders_by_day.csv'
 (FORMAT CSV, HEADER);
 
 -- Top Products
@@ -68,7 +68,7 @@ COPY (
     SELECT *
     FROM top_products
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/top_products.csv'
+TO 'exports/top_products.csv'
 (FORMAT CSV, HEADER);
 
 -- Department Performance
@@ -88,7 +88,7 @@ COPY (
     SELECT *
     FROM department_performance
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/department_performance.csv'
+TO 'exports/department_performance.csv'
 (FORMAT CSV, HEADER);
 
 -- Customer Segments
@@ -108,7 +108,7 @@ COPY (
     SELECT *
     FROM customer_segments
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/customer_segments.csv'
+TO 'exports/customer_segments.csv'
 (FORMAT CSV, HEADER);
 
 -- Customer Loyalty
@@ -127,7 +127,7 @@ COPY (
     SELECT *
     FROM customer_metrics
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/customer_metrics.csv'
+TO 'exports/customer_metrics.csv'
 (FORMAT CSV, HEADER);
 
 -- Customer Retention
@@ -143,7 +143,7 @@ COPY (
     SELECT *
     FROM customer_retention
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/customer_retention.csv'
+TO 'exports/customer_retention.csv'
 (FORMAT CSV, HEADER);
 
 
@@ -165,7 +165,7 @@ COPY (
     SELECT *
     FROM subscription_products
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/subscription_products.csv'
+TO 'exports/subscription_products.csv'
 (FORMAT CSV, HEADER);
 
 CREATE VIEW high_value_customer_preferences AS
@@ -189,5 +189,5 @@ COPY (
     SELECT *
     FROM high_value_customer_preferences
 )
-TO 'C:/Users/lenovo/Downloads/Instacart-Visualisation/high_value_customer_preferences.csv'
+TO 'exports/high_value_customer_preferences.csv'
 (FORMAT CSV, HEADER);

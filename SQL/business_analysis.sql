@@ -69,22 +69,27 @@ SELECT
 -- Q8. Which products have the highest reorder rate?
 -- Business Use: Identify products that create strong customer loyalty.
 
-SELECT p.product_name , COUNT(op.product_id) AS Total_Reorder, 
-ROUND(SUM(op.reordered)*100/COUNT(*),2) AS Reorder_Rate
+SELECT 
+    p.product_name,
+    COUNT(op.product_id) AS Total_Purchases,
+    SUM(op.reordered) AS Total_Reorders,
+    ROUND(SUM(op.reordered) * 100.0 / COUNT(*), 2) AS Reorder_Rate
 FROM order_products_prior op 
 JOIN products p ON op.product_id = p.product_id
-GROUP BY p.product_id,p.product_name
-ORDER BY Total_Reorder DESC
+GROUP BY p.product_id, p.product_name
+ORDER BY Total_Reorders DESC
 LIMIT 10;
 
 -- Q9. Which departments have the highest reorder rate?
 -- Business Use: Determine which categories retain customers best.
 
-SELECT d.department,ROUND(SUM(op.reordered)*100/COUNT(*),2) AS Reorder_Rate
+SELECT 
+    d.department,
+    ROUND(SUM(op.reordered) * 100.0 / COUNT(*), 2) AS Reorder_Rate
 FROM order_products_prior op 
 JOIN products p ON op.product_id = p.product_id
 JOIN department d ON p.department_id = d.department_id
-GROUP BY d.department,d.department_id
+GROUP BY d.department, d.department_id
 ORDER BY Reorder_Rate DESC
 LIMIT 10;
 
